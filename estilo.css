@@ -1,43 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-:root{
-    --corPrincipal: #1e324a;
-    --corSecundaria: #f37a1b;
+/*RESETAR SITE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
-header{
-    background-color: var(--corPrincipal);
-    height: 150px; 
+/*VARIAVEIS*/
+
+:root {
+  --corPrincipal: #1e324a;
+  --corSecundaria: #f37a1b;
+}
+
+
+/*HEADER*/
+
+header {
+  background-color: var(--corPrincipal);
+  height: 120px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.links a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.links a:hover {
+  color: #be906c;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin: 0 20px;
+}
+
+.numero {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  font-size: 13px;
+  color: var(--corSecundaria);
+}
+
+.numero span{
+    margin: 0 5px;
+}
+
+/*APRESENTACAO*/
+
+.apresentacao{
+    background-image: url(img/apresentacao.avif);
     color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    position: relative;
+    text-align: center;
+    flex-flow: column;
+    height: 700px;
 }
 
+.apresentacao h1{
+    color: var(--corSecundaria);
+    margin-bottom: 30px;
+    font-size: 40px;
+}
 
-.links a{
-    margin: 0 20px;
+.orcamento{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    background: none;
+    transition: 0.5s;
     color: white;
-    text-decoration: none;
-    transition: 1s;
+    border: 1px solid white;
 }
 
-.links a:hover{
-    color: #be906c;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.logo img{
-    margin: 0 20px;
+.orcamento:hover{
+    background-color: var(--corSecundaria);
+    border: 1px solid var(--corSecundaria);
 }
