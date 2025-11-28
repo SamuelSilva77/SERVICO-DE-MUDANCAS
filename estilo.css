@@ -6,14 +6,12 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 /*VARIAVEIS*/
 
 :root {
   --corPrincipal: #1e324a;
   --corSecundaria: #f37a1b;
 }
-
 
 /*HEADER*/
 
@@ -55,62 +53,62 @@ header {
   color: var(--corSecundaria);
 }
 
-.numero span{
-    margin: 0 5px;
+.numero span {
+  margin: 0 5px;
 }
 
 /*APRESENTACAO*/
 
-.apresentacao{
-    background-image: url(img/apresentacao.avif);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-flow: column;
-    height: 700px;
+.apresentacao {
+  background-image: url(img/apresentacao.avif);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+  height: 700px;
 }
 
-.apresentacao h1{
-    color: var(--corSecundaria);
-    margin-bottom: 30px;
-    font-size: 40px;
+.apresentacao h1 {
+  color: var(--corSecundaria);
+  margin-bottom: 30px;
+  font-size: 40px;
 }
 
-.orcamento{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 70px;
-    padding: 10px 30px;
-    letter-spacing: 1px;
-    background: none;
-    transition: 0.5s;
-    color: white;
-    border: 1px solid white;
+.orcamento {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 70px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  background: none;
+  transition: 0.5s;
+  color: white;
+  border: 1px solid white;
 }
 
-.orcamento:hover{
-    background-color: var(--corSecundaria);
-    border: 1px solid var(--corSecundaria);
+.orcamento:hover {
+  background-color: var(--corSecundaria);
+  border: 1px solid var(--corSecundaria);
 }
 
 /*SOBRE NÓS*/
 
-.sobre{
+.sobre {
   display: flex;
   margin: 0 20%;
   gap: 80px;
   height: 550px;
 }
 
-.sobre h1{
+.sobre h1 {
   color: var(--corPrincipal);
   font-size: 35px;
   margin: 80px 0 30px 0;
   position: relative;
 }
 
-.sobre h1::before{
+.sobre h1::before {
   content: "";
   width: 10px;
   height: 80px;
@@ -119,19 +117,20 @@ header {
   left: -30px;
 }
 
-.sobre h2{
+.sobre h2 {
   color: var(--corSecundaria);
   margin-bottom: 50px;
   font-size: 23px;
 }
 
-.sobre span, .sobre p{
+.sobre span,
+.sobre p {
   font-weight: 100;
 }
 
 /*SERVIÇOS*/
 
-.servicos{
+.servicos {
   height: 800px;
   background-color: var(--corPrincipal);
   color: white;
@@ -141,13 +140,13 @@ header {
   align-items: center;
 }
 
-.servicos h1{
+.servicos h1 {
   position: absolute;
   top: -65px;
   left: -5px;
 }
 
-.servicos h1::before{
+.servicos h1::before {
   content: "";
   position: absolute;
   background-color: white;
@@ -156,16 +155,15 @@ header {
   left: -40px;
 }
 
-
-.cards{
+.cards {
   height: 70%;
-  width: 55%;
+  width: 60%;
   display: flex;
   gap: 40px;
   flex-flow: row wrap;
 }
 
-.card{
+.card {
   width: 470px;
   height: 254px;
   padding: 30px;
@@ -174,34 +172,87 @@ header {
   gap: 50px;
 }
 
-.card span{
-  color: hsl(177,38%,39%);
+.card span {
+  color: hsl(177, 38%, 39%);
   font-weight: 900;
 }
 
-.card p{
+.card p {
   color: black;
   padding: 15px 0;
 }
 
-.card a{
-  color: hsl(177,38%,39%);
+.card a {
+  color: hsl(177, 38%, 39%);
 }
 
 @media only screen and (max-width: 1500px) {
-  .servicos{
+  .servicos {
     height: auto;
     padding: 130px 0;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .card{
+  .card {
     width: auto;
     height: auto;
   }
 }
 
+/*DEPOIMENTOS*/
 
+.depoimentos {
+  height: 600px;
+  background-color: var(--corSecundaria);
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column;
+  padding: 0 300px;
+}
 
+.depoimentos h1 {
+  position: relative;
+}
 
+.depoimentos h1::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 70px;
+  left: -20px;
+  background-color: white;
+}
+
+.divFalas * {
+  margin: 20px 0;
+}
+
+.divFalas span {
+  font-weight: 100;
+  color: var(--corPrincipal);
+}
+
+.divFalas p {
+  font-weight: bold;
+  color: var(--corPrincipal);
+}
+
+.divFalas {
+  text-align: center;
+  border: 1px solid black;
+  position: relative;
+}
+
+.next {
+  width: max-content;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .depoimentos {
+    padding: 0 100px;
+  }
+}
