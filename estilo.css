@@ -240,15 +240,27 @@ header {
 
 .divFalas {
   text-align: center;
-  border: 1px solid black;
   position: relative;
+  padding: 0 15%;
 }
 
 .next {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.next, .back{
   width: max-content;
   position: absolute;
-  left: 0;
-  bottom: 0px;
+  cursor: pointer;
+}
+
+.next:hover, .back:hover{
+  opacity: 0.6;
+}
+
+.back {
+  right:0;
 }
 
 @media only screen and (max-width: 1000px) {
