@@ -244,7 +244,7 @@ header {
   padding: 0 15%;
 }
 
-.next {
+.back {
   left: 0;
   transform: rotate(180deg);
 }
@@ -259,7 +259,7 @@ header {
   opacity: 0.6;
 }
 
-.back {
+.next {
   right:0;
 }
 
@@ -268,3 +268,9 @@ header {
     padding: 0 100px;
   }
 }
+
+input[type = "radio"]{
+  margin: 30px 10px;
+  cursor: pointer;
+}
+
