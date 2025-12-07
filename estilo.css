@@ -274,3 +274,71 @@ input[type = "radio"]{
   cursor: pointer;
 }
 
+
+/*FOOTER*/
+
+footer{
+  height: 600px;
+  background-color: rgb(245, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div{
+  width: 30%;
+  margin: 0px 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  footer div{
+    margin: 0 20px;
+  }
+}
+
+footer input{
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+
+footer input:hover{
+  border: 2px solid black;
+}
+
+footer button{
+  width: 100%;
+  padding: 8px 0;
+  color: white;
+  border: none;
+  background-color: var(--corSecundaria);
+}
+
+.contato *{
+  margin: 40px 0;
+}
+
+.contato span{
+  color: var(--corSecundaria);
+}
+
+footer img{
+  float: left;
+}
+
+footer h1{
+  position: relative;
+}
+
+footer h1:before{
+  content: "";
+  position: absolute;
+  left: -15px;
+  width: 7px;
+  height: 80px;
+  background-color: var(--corPrincipal);
+}
+
+
+
+
+
